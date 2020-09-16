@@ -11,11 +11,18 @@
 		E52768D02512B3A8007AD028 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52768CE2512B3A8007AD028 /* Interface.storyboard */; };
 		E52768D22512B3AA007AD028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52768D12512B3AA007AD028 /* Assets.xcassets */; };
 		E52768D92512B3AA007AD028 /* Snap Counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E52768D82512B3AA007AD028 /* Snap Counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E52768DE2512B3AA007AD028 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52768DD2512B3AA007AD028 /* ContentView.swift */; };
+		E52768DE2512B3AA007AD028 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52768DD2512B3AA007AD028 /* CounterView.swift */; };
 		E52768E02512B3AA007AD028 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52768DF2512B3AA007AD028 /* HostingController.swift */; };
 		E52768E22512B3AA007AD028 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52768E12512B3AA007AD028 /* ExtensionDelegate.swift */; };
 		E52768E42512B3AB007AD028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52768E32512B3AB007AD028 /* Assets.xcassets */; };
 		E52768E72512B3AB007AD028 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52768E62512B3AB007AD028 /* Preview Assets.xcassets */; };
+		E52768FA2512B4F6007AD028 /* ListCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52768F92512B4F6007AD028 /* ListCounterView.swift */; };
+		E52768FC2512B5D2007AD028 /* CounterCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52768FB2512B5D2007AD028 /* CounterCategoryRow.swift */; };
+		E52768FE2512B65A007AD028 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52768FD2512B65A007AD028 /* Counter.swift */; };
+		E52769002512BD25007AD028 /* ListCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52768FF2512BD25007AD028 /* ListCounterViewModel.swift */; };
+		E52769022512BD68007AD028 /* CounterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52769012512BD68007AD028 /* CounterRow.swift */; };
+		E52769042512BE41007AD028 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52769032512BE41007AD028 /* CounterViewModel.swift */; };
+		E553710A2512D8AD007185F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52768D12512B3AA007AD028 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,12 +74,18 @@
 		E52768D12512B3AA007AD028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52768D32512B3AA007AD028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E52768D82512B3AA007AD028 /* Snap Counter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Snap Counter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E52768DD2512B3AA007AD028 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E52768DD2512B3AA007AD028 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		E52768DF2512B3AA007AD028 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		E52768E12512B3AA007AD028 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		E52768E32512B3AB007AD028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52768E62512B3AB007AD028 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E52768E82512B3AB007AD028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52768F92512B4F6007AD028 /* ListCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCounterView.swift; sourceTree = "<group>"; };
+		E52768FB2512B5D2007AD028 /* CounterCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCategoryRow.swift; sourceTree = "<group>"; };
+		E52768FD2512B65A007AD028 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		E52768FF2512BD25007AD028 /* ListCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCounterViewModel.swift; sourceTree = "<group>"; };
+		E52769012512BD68007AD028 /* CounterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterRow.swift; sourceTree = "<group>"; };
+		E52769032512BE41007AD028 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +131,9 @@
 		E52768DC2512B3AA007AD028 /* Snap Counter WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E52768DD2512B3AA007AD028 /* ContentView.swift */,
+				E52768F82512B4E2007AD028 /* Views */,
+				E52768F72512B4DE007AD028 /* ViewModels */,
+				E52768F62512B4D9007AD028 /* Models */,
 				E52768DF2512B3AA007AD028 /* HostingController.swift */,
 				E52768E12512B3AA007AD028 /* ExtensionDelegate.swift */,
 				E52768E32512B3AB007AD028 /* Assets.xcassets */,
@@ -134,6 +149,34 @@
 				E52768E62512B3AB007AD028 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E52768F62512B4D9007AD028 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E52768FD2512B65A007AD028 /* Counter.swift */,
+				E52769012512BD68007AD028 /* CounterRow.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E52768F72512B4DE007AD028 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E52768FF2512BD25007AD028 /* ListCounterViewModel.swift */,
+				E52769032512BE41007AD028 /* CounterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E52768F82512B4E2007AD028 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E52768DD2512B3AA007AD028 /* CounterView.swift */,
+				E52768F92512B4F6007AD028 /* ListCounterView.swift */,
+				E52768FB2512B5D2007AD028 /* CounterCategoryRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E52768E72512B3AB007AD028 /* Preview Assets.xcassets in Resources */,
+				E553710A2512D8AD007185F9 /* Assets.xcassets in Resources */,
 				E52768E42512B3AB007AD028 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,8 +309,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E52768E02512B3AA007AD028 /* HostingController.swift in Sources */,
-				E52768DE2512B3AA007AD028 /* ContentView.swift in Sources */,
+				E52768DE2512B3AA007AD028 /* CounterView.swift in Sources */,
+				E52769042512BE41007AD028 /* CounterViewModel.swift in Sources */,
+				E52768FE2512B65A007AD028 /* Counter.swift in Sources */,
+				E52769022512BD68007AD028 /* CounterRow.swift in Sources */,
 				E52768E22512B3AA007AD028 /* ExtensionDelegate.swift in Sources */,
+				E52769002512BD25007AD028 /* ListCounterViewModel.swift in Sources */,
+				E52768FC2512B5D2007AD028 /* CounterCategoryRow.swift in Sources */,
+				E52768FA2512B4F6007AD028 /* ListCounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

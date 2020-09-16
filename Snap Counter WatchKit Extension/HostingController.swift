@@ -10,8 +10,8 @@ import WatchKit
 import Foundation
 import SwiftUI
 
-class HostingController: WKHostingController<ContentView> {
-    override var body: ContentView {
-        return ContentView()
+class HostingController: WKHostingController<ListCounterView> {
+    override var body: ListCounterView {
+        return ListCounterView(listCounterVM: ListCounterViewModel())
     }
 }
