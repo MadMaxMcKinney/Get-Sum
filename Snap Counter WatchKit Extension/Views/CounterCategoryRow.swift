@@ -18,6 +18,7 @@ struct CounterCategoryRow: View {
             // Symbol
             Image(systemName: self.symbol)
                 .foregroundColor(Color("Accent Color"))
+                .frame(minWidth: 25)
             
             // Row Title
             Text(self.title)

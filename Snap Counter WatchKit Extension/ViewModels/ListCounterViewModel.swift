@@ -10,11 +10,11 @@ import Foundation
 
 class ListCounterViewModel: ObservableObject {
     @Published var rows:[CounterRow] = [
-        CounterRow(symbol: "waveform.path.ecg", title: "Workouts"),
+        CounterRow(symbol: "flame", title: "Workouts"),
         CounterRow(symbol: "waveform.path.ecg", title: "Medical"),
-        CounterRow(symbol: "waveform.path.ecg", title: "Scores"),
-        CounterRow(symbol: "waveform.path.ecg", title: "Successes"),
-        CounterRow(symbol: "waveform.path.ecg", title: "Failures")
+        CounterRow(symbol: "gamecontroller", title: "Scores"),
+        CounterRow(symbol: "checkmark", title: "Successes"),
+        CounterRow(symbol: "xmark", title: "Failures")
     ]
     
     init() {
