@@ -24,7 +24,7 @@ struct ValueButton: View {
             }
         })
         // Add a check for what type this is to darken the background color for subtracting types
-        .background(Color("Accent Color"))
+        .background(self.type == .ADD ? Color("Accent Color") : Color("Secondary Color"))
         .clipShape(RoundedRectangle(cornerRadius: 9))
         .frame(width: 50)
     }
@@ -37,6 +37,9 @@ enum CounterButtonType {
 
 struct ValueButton_Previews: PreviewProvider {
     static var previews: some View {
-        ValueButton(type: .ADD, value: 2, action: {})
+        Group {
+            ValueButton(type: .ADD, value: 2, action: {})
+            ValueButton(type: .SUBTRACT, value: 2, action: {})
+        }
     }
 }

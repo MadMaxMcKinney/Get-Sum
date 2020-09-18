@@ -16,11 +16,10 @@ struct ListCounterView: View {
         List {
             ForEach(listCounterVM.rows) {row in
                 NavigationLink(destination: CounterView(counterVM: CounterViewModel(name: row.title))) {
-                    CounterCategoryRow(title: row.title, symbol: row.symbol)
-                        
+                    CounterCategoryRow(title: row.title, symbol: row.symbol)       
                 }
             }
-        }.navigationBarTitle("Get")
+        }.navigationBarTitle("Get Sum")
     }
 }
 

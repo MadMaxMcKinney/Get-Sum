@@ -174,12 +174,20 @@
 		E52768F82512B4E2007AD028 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E5D2705A251562A200740CC5 /* Secondary Views */,
 				E52768DD2512B3AA007AD028 /* CounterView.swift */,
 				E52768F92512B4F6007AD028 /* ListCounterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E5D2705A251562A200740CC5 /* Secondary Views */ = {
+			isa = PBXGroup;
+			children = (
 				E52768FB2512B5D2007AD028 /* CounterCategoryRow.swift */,
 				E54E5930251455C500C9EE3C /* ValueButton.swift */,
 			);
-			path = Views;
+			path = "Secondary Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,7 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Get SumWatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6SBMQF2UF5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Get Sum WatchKit Extension/Info.plist";
@@ -492,7 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Get SumWatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6SBMQF2UF5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Get Sum WatchKit Extension/Info.plist";

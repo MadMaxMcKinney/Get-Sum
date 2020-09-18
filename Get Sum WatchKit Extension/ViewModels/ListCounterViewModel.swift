@@ -13,8 +13,10 @@ class ListCounterViewModel: ObservableObject {
         CounterRow(symbol: "flame", title: "Workouts"),
         CounterRow(symbol: "waveform.path.ecg", title: "Medical"),
         CounterRow(symbol: "gamecontroller", title: "Scores"),
+        CounterRow(symbol: "dollarsign.circle", title: "Finance"),
         CounterRow(symbol: "checkmark", title: "Successes"),
-        CounterRow(symbol: "xmark", title: "Failures")
+        CounterRow(symbol: "xmark", title: "Failures"),
+        CounterRow(symbol: "stopwatch", title: "Generic")
     ]
     
     init() {
