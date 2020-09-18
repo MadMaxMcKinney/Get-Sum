@@ -9,15 +9,18 @@
 import SwiftUI
 
 struct CounterView: View {
+    
+    @ObservedObject var counterVM:CounterViewModel
+    
     var body: some View {
         VStack() {
             
             HStack(alignment:.top) {
                 // Title and Count
                 VStack(alignment: .leading) {
-                    Text("Jumps")
+                    Text(counterVM.name)
                         .font(.headline)
-                    Text("201")
+                    Text("\(counterVM.getCount())")
                         .font(.system(size: 43))
                         .fontWeight(.bold)
                         .padding(.top)
@@ -26,11 +29,13 @@ struct CounterView: View {
                 Spacer()
                 
                 // Reset button
-                Button(action: {}, label: {
+                Button(action: {
+                    counterVM.resetCount()
+                    WKInterfaceDevice.current().play(.success)
+                }, label: {
                     Image(systemName: "arrow.counterclockwise")
                         .foregroundColor(Color("Accent Color"))
                 })
-                .onTapGesture { self.playHaptic() }
                 .frame(maxWidth: 50)
             }
             
@@ -39,26 +44,23 @@ struct CounterView: View {
             // List of value buttons
             ScrollView(.horizontal) {
                 HStack {
-                    ForEach(0..<4) {index in
-                        Button(action: {}, label: {
-                            Text("+ \(index+1)")
-                        })
-                        .background(Color("Accent Color"))
-                        .clipShape(RoundedRectangle(cornerRadius: 9))
+                    ForEach(self.counterVM.buttons, id: \.self) {buttonTypeList in
+                        ForEach(0..<buttonTypeList.count) {index in
+                            ValueButton(type: buttonTypeList[index], value: index+1, action: {
+                                counterVM.updateCount(type: buttonTypeList[index], value: index+1)
+                                WKInterfaceDevice.current().play(.click)
+                            })
+                        }
                     }
                 }
             }
         }
         .padding(.top)
     }
-    
-    func playHaptic() {
-        WKInterfaceDevice.current().play(.success)
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CounterView()
+        CounterView(counterVM: CounterViewModel(name: "Workouts"))
     }
 }

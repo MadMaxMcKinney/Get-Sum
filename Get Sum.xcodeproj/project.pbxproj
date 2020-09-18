@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E52768CA2512B3A8007AD028 /* Snap Counter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E52768C92512B3A8007AD028 /* Snap Counter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E52768CA2512B3A8007AD028 /* Get Sum WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E52768C92512B3A8007AD028 /* Get Sum WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E52768D02512B3A8007AD028 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52768CE2512B3A8007AD028 /* Interface.storyboard */; };
 		E52768D22512B3AA007AD028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52768D12512B3AA007AD028 /* Assets.xcassets */; };
-		E52768D92512B3AA007AD028 /* Snap Counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E52768D82512B3AA007AD028 /* Snap Counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E52768D92512B3AA007AD028 /* Get Sum WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E52768D82512B3AA007AD028 /* Get Sum WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E52768DE2512B3AA007AD028 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52768DD2512B3AA007AD028 /* CounterView.swift */; };
 		E52768E02512B3AA007AD028 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52768DF2512B3AA007AD028 /* HostingController.swift */; };
 		E52768E22512B3AA007AD028 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52768E12512B3AA007AD028 /* ExtensionDelegate.swift */; };
@@ -22,6 +22,7 @@
 		E52769002512BD25007AD028 /* ListCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52768FF2512BD25007AD028 /* ListCounterViewModel.swift */; };
 		E52769022512BD68007AD028 /* CounterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52769012512BD68007AD028 /* CounterRow.swift */; };
 		E52769042512BE41007AD028 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52769032512BE41007AD028 /* CounterViewModel.swift */; };
+		E54E5931251455C500C9EE3C /* ValueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E5930251455C500C9EE3C /* ValueButton.swift */; };
 		E553710A2512D8AD007185F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52768D12512B3AA007AD028 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +50,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				E52768D92512B3AA007AD028 /* Snap Counter WatchKit Extension.appex in Embed App Extensions */,
+				E52768D92512B3AA007AD028 /* Get Sum WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,7 +61,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				E52768CA2512B3A8007AD028 /* Snap Counter WatchKit App.app in Embed Watch Content */,
+				E52768CA2512B3A8007AD028 /* Get Sum WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,12 +69,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E52768C52512B3A8007AD028 /* Snap Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snap Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E52768C92512B3A8007AD028 /* Snap Counter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snap Counter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52768C52512B3A8007AD028 /* Get Sum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Sum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52768C92512B3A8007AD028 /* Get Sum WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Sum WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52768CF2512B3A8007AD028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		E52768D12512B3AA007AD028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52768D32512B3AA007AD028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E52768D82512B3AA007AD028 /* Snap Counter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Snap Counter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52768D82512B3AA007AD028 /* Get Sum WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Get Sum WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52768DD2512B3AA007AD028 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		E52768DF2512B3AA007AD028 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		E52768E12512B3AA007AD028 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		E52768FF2512BD25007AD028 /* ListCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCounterViewModel.swift; sourceTree = "<group>"; };
 		E52769012512BD68007AD028 /* CounterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterRow.swift; sourceTree = "<group>"; };
 		E52769032512BE41007AD028 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
+		E54E5930251455C500C9EE3C /* ValueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +104,8 @@
 		E52768BE2512B3A8007AD028 = {
 			isa = PBXGroup;
 			children = (
-				E52768CD2512B3A8007AD028 /* Snap Counter WatchKit App */,
-				E52768DC2512B3AA007AD028 /* Snap Counter WatchKit Extension */,
+				E52768CD2512B3A8007AD028 /* Get Sum */,
+				E52768DC2512B3AA007AD028 /* Get Sum WatchKit Extension */,
 				E52768C62512B3A8007AD028 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,24 +113,24 @@
 		E52768C62512B3A8007AD028 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E52768C52512B3A8007AD028 /* Snap Counter.app */,
-				E52768C92512B3A8007AD028 /* Snap Counter WatchKit App.app */,
-				E52768D82512B3AA007AD028 /* Snap Counter WatchKit Extension.appex */,
+				E52768C52512B3A8007AD028 /* Get Sum.app */,
+				E52768C92512B3A8007AD028 /* Get Sum WatchKit App.app */,
+				E52768D82512B3AA007AD028 /* Get Sum WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E52768CD2512B3A8007AD028 /* Snap Counter WatchKit App */ = {
+		E52768CD2512B3A8007AD028 /* Get Sum */ = {
 			isa = PBXGroup;
 			children = (
 				E52768CE2512B3A8007AD028 /* Interface.storyboard */,
 				E52768D12512B3AA007AD028 /* Assets.xcassets */,
 				E52768D32512B3AA007AD028 /* Info.plist */,
 			);
-			path = "Snap Counter WatchKit App";
+			path = "Get Sum";
 			sourceTree = "<group>";
 		};
-		E52768DC2512B3AA007AD028 /* Snap Counter WatchKit Extension */ = {
+		E52768DC2512B3AA007AD028 /* Get Sum WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
 				E52768F82512B4E2007AD028 /* Views */,
@@ -140,7 +142,7 @@
 				E52768E82512B3AB007AD028 /* Info.plist */,
 				E52768E52512B3AB007AD028 /* Preview Content */,
 			);
-			path = "Snap Counter WatchKit Extension";
+			path = "Get Sum WatchKit Extension";
 			sourceTree = "<group>";
 		};
 		E52768E52512B3AB007AD028 /* Preview Content */ = {
@@ -175,6 +177,7 @@
 				E52768DD2512B3AA007AD028 /* CounterView.swift */,
 				E52768F92512B4F6007AD028 /* ListCounterView.swift */,
 				E52768FB2512B5D2007AD028 /* CounterCategoryRow.swift */,
+				E54E5930251455C500C9EE3C /* ValueButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,9 +185,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E52768C42512B3A8007AD028 /* Snap Counter */ = {
+		E52768C42512B3A8007AD028 /* Get Sum */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E52768F32512B3AB007AD028 /* Build configuration list for PBXNativeTarget "Snap Counter" */;
+			buildConfigurationList = E52768F32512B3AB007AD028 /* Build configuration list for PBXNativeTarget "Get Sum" */;
 			buildPhases = (
 				E52768C32512B3A8007AD028 /* Resources */,
 				E52768F22512B3AB007AD028 /* Embed Watch Content */,
@@ -194,14 +197,14 @@
 			dependencies = (
 				E52768CC2512B3A8007AD028 /* PBXTargetDependency */,
 			);
-			name = "Snap Counter";
+			name = "Get Sum";
 			productName = "Snap Counter";
-			productReference = E52768C52512B3A8007AD028 /* Snap Counter.app */;
+			productReference = E52768C52512B3A8007AD028 /* Get Sum.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		E52768C82512B3A8007AD028 /* Snap Counter WatchKit App */ = {
+		E52768C82512B3A8007AD028 /* Get Sum WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E52768EF2512B3AB007AD028 /* Build configuration list for PBXNativeTarget "Snap Counter WatchKit App" */;
+			buildConfigurationList = E52768EF2512B3AB007AD028 /* Build configuration list for PBXNativeTarget "Get Sum WatchKit App" */;
 			buildPhases = (
 				E52768C72512B3A8007AD028 /* Resources */,
 				E52768EE2512B3AB007AD028 /* Embed App Extensions */,
@@ -211,14 +214,14 @@
 			dependencies = (
 				E52768DB2512B3AA007AD028 /* PBXTargetDependency */,
 			);
-			name = "Snap Counter WatchKit App";
+			name = "Get Sum WatchKit App";
 			productName = "Snap Counter WatchKit App";
-			productReference = E52768C92512B3A8007AD028 /* Snap Counter WatchKit App.app */;
+			productReference = E52768C92512B3A8007AD028 /* Get Sum WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		E52768D72512B3AA007AD028 /* Snap Counter WatchKit Extension */ = {
+		E52768D72512B3AA007AD028 /* Get Sum WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E52768EB2512B3AB007AD028 /* Build configuration list for PBXNativeTarget "Snap Counter WatchKit Extension" */;
+			buildConfigurationList = E52768EB2512B3AB007AD028 /* Build configuration list for PBXNativeTarget "Get Sum WatchKit Extension" */;
 			buildPhases = (
 				E52768D42512B3AA007AD028 /* Sources */,
 				E52768D52512B3AA007AD028 /* Frameworks */,
@@ -228,9 +231,9 @@
 			);
 			dependencies = (
 			);
-			name = "Snap Counter WatchKit Extension";
+			name = "Get Sum WatchKit Extension";
 			productName = "Snap Counter WatchKit Extension";
-			productReference = E52768D82512B3AA007AD028 /* Snap Counter WatchKit Extension.appex */;
+			productReference = E52768D82512B3AA007AD028 /* Get Sum WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -254,7 +257,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E52768C22512B3A8007AD028 /* Build configuration list for PBXProject "Snap Counter" */;
+			buildConfigurationList = E52768C22512B3A8007AD028 /* Build configuration list for PBXProject "Get Sum" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -267,9 +270,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E52768C42512B3A8007AD028 /* Snap Counter */,
-				E52768C82512B3A8007AD028 /* Snap Counter WatchKit App */,
-				E52768D72512B3AA007AD028 /* Snap Counter WatchKit Extension */,
+				E52768C42512B3A8007AD028 /* Get Sum */,
+				E52768C82512B3A8007AD028 /* Get Sum WatchKit App */,
+				E52768D72512B3AA007AD028 /* Get Sum WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -317,6 +320,7 @@
 				E52769002512BD25007AD028 /* ListCounterViewModel.swift in Sources */,
 				E52768FC2512B5D2007AD028 /* CounterCategoryRow.swift in Sources */,
 				E52768FA2512B4F6007AD028 /* ListCounterView.swift in Sources */,
+				E54E5931251455C500C9EE3C /* ValueButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,12 +329,12 @@
 /* Begin PBXTargetDependency section */
 		E52768CC2512B3A8007AD028 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E52768C82512B3A8007AD028 /* Snap Counter WatchKit App */;
+			target = E52768C82512B3A8007AD028 /* Get Sum WatchKit App */;
 			targetProxy = E52768CB2512B3A8007AD028 /* PBXContainerItemProxy */;
 		};
 		E52768DB2512B3AA007AD028 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E52768D72512B3AA007AD028 /* Snap Counter WatchKit Extension */;
+			target = E52768D72512B3AA007AD028 /* Get Sum WatchKit Extension */;
 			targetProxy = E52768DA2512B3AA007AD028 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -464,16 +468,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Snap Counter WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Get SumWatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 6SBMQF2UF5;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Snap Counter WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "Get Sum WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maxmckinney.Snap-Counter.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxmckinney.Get-Sum.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -488,16 +492,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Snap Counter WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Get SumWatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 6SBMQF2UF5;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Snap Counter WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "Get Sum WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maxmckinney.Snap-Counter.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxmckinney.Get-Sum.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -514,9 +518,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6SBMQF2UF5;
-				IBSC_MODULE = Snap_Counter_WatchKit_Extension;
-				INFOPLIST_FILE = "Snap Counter WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maxmckinney.Snap-Counter.watchkitapp";
+				IBSC_MODULE = Get_Sum_WatchKit_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/Get Sum/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxmckinney.Get-Sum.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -533,9 +537,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6SBMQF2UF5;
-				IBSC_MODULE = Snap_Counter_WatchKit_Extension;
-				INFOPLIST_FILE = "Snap Counter WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maxmckinney.Snap-Counter.watchkitapp";
+				IBSC_MODULE = Get_Sum_WatchKit_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/Get Sum/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxmckinney.Get-Sum.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -552,7 +556,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6SBMQF2UF5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maxmckinney.Snap-Counter";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxmckinney.Get-Sum";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -565,7 +569,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6SBMQF2UF5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maxmckinney.Snap-Counter";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxmckinney.Get-Sum";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -574,7 +578,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E52768C22512B3A8007AD028 /* Build configuration list for PBXProject "Snap Counter" */ = {
+		E52768C22512B3A8007AD028 /* Build configuration list for PBXProject "Get Sum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E52768E92512B3AB007AD028 /* Debug */,
@@ -583,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E52768EB2512B3AB007AD028 /* Build configuration list for PBXNativeTarget "Snap Counter WatchKit Extension" */ = {
+		E52768EB2512B3AB007AD028 /* Build configuration list for PBXNativeTarget "Get Sum WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E52768EC2512B3AB007AD028 /* Debug */,
@@ -592,7 +596,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E52768EF2512B3AB007AD028 /* Build configuration list for PBXNativeTarget "Snap Counter WatchKit App" */ = {
+		E52768EF2512B3AB007AD028 /* Build configuration list for PBXNativeTarget "Get Sum WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E52768F02512B3AB007AD028 /* Debug */,
@@ -601,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E52768F32512B3AB007AD028 /* Build configuration list for PBXNativeTarget "Snap Counter" */ = {
+		E52768F32512B3AB007AD028 /* Build configuration list for PBXNativeTarget "Get Sum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E52768F42512B3AB007AD028 /* Debug */,

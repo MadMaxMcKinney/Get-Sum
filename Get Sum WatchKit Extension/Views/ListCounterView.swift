@@ -15,12 +15,12 @@ struct ListCounterView: View {
     var body: some View {
         List {
             ForEach(listCounterVM.rows) {row in
-                NavigationLink(destination: CounterView()) {
+                NavigationLink(destination: CounterView(counterVM: CounterViewModel(name: row.title))) {
                     CounterCategoryRow(title: row.title, symbol: row.symbol)
                         
                 }
             }
-        }.navigationBarTitle("Snap Counter")
+        }.navigationBarTitle("Get")
     }
 }
 
