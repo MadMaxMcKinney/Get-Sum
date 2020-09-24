@@ -26,7 +26,7 @@ struct ValueButton: View {
         // Add a check for what type this is to darken the background color for subtracting types
         .background(self.type == .ADD ? Color("Accent Color") : Color("Secondary Color"))
         .clipShape(RoundedRectangle(cornerRadius: 9))
-        .frame(width: 50)
+        .frame(width: 47)
     }
 }
 
