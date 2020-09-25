@@ -10,6 +10,6 @@ import Foundation
 
 struct CounterRow: Identifiable {
     let symbol:String
-    let title:String
-    var id:String {self.title}
+    let counter:Counter
+    var id:UUID = UUID()
 }

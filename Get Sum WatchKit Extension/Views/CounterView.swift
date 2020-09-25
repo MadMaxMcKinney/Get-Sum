@@ -18,7 +18,7 @@ struct CounterView: View {
             HStack(alignment:.top) {
                 // Title and Count
                 VStack(alignment: .leading) {
-                    Text(counterVM.name)
+                    Text(counterVM.getName())
                         .font(.headline)
                     Text("\(counterVM.getCount())")
                         .font(.system(size: 43))
@@ -28,15 +28,20 @@ struct CounterView: View {
                 
                 Spacer()
                 
-                // Reset button
-                Button(action: {
-                    counterVM.resetCount()
-                    WKInterfaceDevice.current().play(.success)
-                }, label: {
-                    Image(systemName: "arrow.counterclockwise")
-                        .foregroundColor(Color("Accent Color"))
-                })
-                .frame(maxWidth: 50)
+                // If configurable show overflow button, otherwise show reset button for normal counters.
+                if(counterVM.isConfigurable()) {
+                    
+                } else {
+                    Button(action: {
+                        counterVM.resetCount()
+                        WKInterfaceDevice.current().play(.success)
+                    }, label: {
+                        Image(systemName: "arrow.counterclockwise")
+                            .foregroundColor(Color("Accent Color"))
+                    })
+                    .frame(maxWidth: 50)
+                }
+                
             }
             
             Spacer()
@@ -61,6 +66,6 @@ struct CounterView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CounterView(counterVM: CounterViewModel(name: "Workouts"))
+        CounterView(counterVM: CounterViewModel(counter: Counter(defaultName: "Workouts", id: "workouts")))
     }
 }

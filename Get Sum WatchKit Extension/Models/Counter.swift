@@ -9,18 +9,33 @@
 import Foundation
 
 struct Counter {
-    private let dataKey:String
-    
+    let id:String
+    var name:String
+    var isConfigurable:Bool = false
     var count:Int
     
-    init(dataKey:String) {
-        self.dataKey = dataKey
+    init(defaultName:String, id:String) {
+        self.id = id
         
-        count = UserDefaults.standard.integer(forKey: self.dataKey)
+        // Get the name, if no name exists use the defaultName prop
+        name = UserDefaults.standard.string(forKey: "\(self.id)name") ?? defaultName
+        
+        // Get the count, if no count exists it returns a 0
+        count = UserDefaults.standard.integer(forKey: "\(self.id)count")
+    }
+    
+    init(defaultName:String, id:String, isConfigurable:Bool) {
+        self.init(defaultName: defaultName, id: id)
+        self.isConfigurable = isConfigurable
     }
     
     func saveValue() {
-        UserDefaults.standard.set(count, forKey: dataKey)
+        UserDefaults.standard.set(count, forKey: "\(self.id)count")
+    }
+    
+    mutating func updateName(newName: String) {
+        name = newName
+        UserDefaults.standard.set(name, forKey: "\(self.id)name")
     }
     
 }

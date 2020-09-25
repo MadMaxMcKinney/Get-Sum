@@ -15,18 +15,22 @@ class CounterViewModel: ObservableObject {
         [.ADD, .ADD, .ADD],
         [.SUBTRACT]
     ]
-    public let name:String
     @Published private var counter:Counter
     
-    init(name:String) {
-        self.name = name
-        
-        // Create a counter using the name of this VM as the key for saving the values to UserDefaults
-        counter = Counter(dataKey: self.name)
+    init(counter:Counter) {
+        self.counter = counter
     }
     
     func getCount() -> Int {
         return counter.count
+    }
+    
+    func getName() -> String {
+        return counter.name
+    }
+    
+    func isConfigurable() -> Bool {
+        return counter.isConfigurable
     }
     
     func updateCount(type:CounterButtonType, value:Int) {
@@ -42,6 +46,10 @@ class CounterViewModel: ObservableObject {
     func resetCount() {
         counter.count = 0
         counter.saveValue()
+    }
+    
+    func updateName(newName: String) {
+        counter.updateName(newName: newName)
     }
     
 }
